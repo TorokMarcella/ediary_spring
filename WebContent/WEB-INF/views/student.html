@@ -1,0 +1,44 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Students</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" th:href="@{../static/main.css}" />
+</head>
+<body>
+	<div class="userTable"></div>
+	<div class="from-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Subject ID</th>
+				<th>User ID</th>
+				<th>Grade Date</th>
+				<th>Description</th>
+				<th>Teacher ID</th>
+				<th>Graduation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="grade : ${grades}">
+				<td><span class="thText" th:text="${grade.id}"> ID </span></td>
+                <td><span class="thText" th:text="${grade.subjectId}"> Subject ID </span></td>
+                <td><span class="thText" th:text="${user.userID}"> User ID </span></td>
+                <td><span class="thText" th:text="${#calendars.format(store.someDate(),'yyyy MM dd')}"> Grade Date </span></td>
+                <td><span class="thText" th:text="${grade.description}"> Description </span></td>
+                <td><span class="thText" th:text="${grade.teahcerID}"> Teacher ID </span></td>
+                <td><span class="thText" th:text="${grade.graduation}"> Graduation </span></td>
+			</tr>
+		</tbody>
+	</table>
+	<ul>
+		<li><a th:href="@{/logout}">
+				<input class="logoutbutton" type="submit" value="Logout" />
+			</a>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+	position: relative;
+    z-index: 1;
+	background: linear-gradient(grey, white);
+	height: 1000px;
+	text-align: center;
+	padding: 10px 20px 600px 20px;
+}
+
+h3 {
+	color: #333;
+}
+
+.header {
+	width: 400px;
+	padding: 20px;
+	margin: 0px auto 100px;
+	float: center;
+}
+
+.mainTable {
+	background: #FFFFFF;
+	width: 550px;
+	text-align: center;
+	padding: 20px 20px 5px;
+	margin: auto;
+}
+
+.mainTable input {
+	font-family: calibri;
+	background: lightgrey;
+	width: 200%;
+	margin: 0px 0px 10px 0px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 15px;
+	border: 0;
+}
+
+input[type=submit] {
+	font-family: calibri;
+	text-transform: uppercase;
+	background: grey;
+	width: 50%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: pink;
+}
+
+li a {
+	font-family: calibri;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+	background-color: grey;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	margin: 10px 20px 0px 10px;
+}
+
+li a:hover {
+	background-color: pink;
+}
+
+ul {
+	float: center;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.text {
+	font-family: calibri;
+	background: lightgrey;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 15px;
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+table {
+	width: 100%;
+}
+
+.new {
+	padding: 0px 0px 10px 0px;
+	text-align: center;
+	maring: 0px;
+}

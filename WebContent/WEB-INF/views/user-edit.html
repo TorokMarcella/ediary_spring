@@ -1,0 +1,46 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>User edit</title>
+        <meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" th:href="@{../static/add_user.css}" />
+</head>
+<body>
+	<div class="header"></div>
+	<div class="from-wrapper">
+		<form name="addForm" th:action="@{edit}" th:object="${user}" method="POST">
+			<table>
+				<tr>
+					<td><label for="id">Id:</label></td>
+					<td><input type="text" name="id" /></td>
+				</tr>
+				<tr>
+					<td><label for="username">Username:</label></td>
+					<td><input type="text" id="userName" th:field="*{username}"/></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password:</label></td>
+					<td><input type="text" id="password" th:field="*{password}"/></td>
+				</tr>
+				<tr>
+					<td><label for="fullName">Fullname:</label></td>
+					<td><input type="text" id="fullName" th:field="*{fullName}"/></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email:</label></td>
+					<td><input type="text" id="email" th:field="*{email}"/></td>
+				</tr>
+				<tr>
+					<td><label for="role">Role:</label></td>
+					<td><input type="text" id="role" th:field="*{role}"/></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="button-wrapper">
+					<input class="abutton" type="submit" name="edit" value="Save" /></td>
+				</tr>
+			</table>
+			</form>
+	</div>
+</body>
+</html>

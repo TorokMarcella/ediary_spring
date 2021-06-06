@@ -1,0 +1,32 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Login</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" th:href="@{./static/login.css}" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="login">
+        <h3>User login</h3>
+        <h5 th:if="${wrong}">Wrong password or username! Please try again!</h5>
+        <form name="loginForm" action="/Ediary_spring/login" method="POST">
+            <table>
+                <tr>
+                    <td><input type="text" name="username" placeholder="username"/></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" placeholder="password"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="button-wrapper">
+                    <input class="login-button" type="submit" value="Login" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

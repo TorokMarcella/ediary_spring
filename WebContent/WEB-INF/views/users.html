@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Users</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" th:href="@{../static/users.css}" />
+</head>
+<body>
+	<div class="header">
+	</div>
+	<div class="mainTable">
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Username</th>
+				<th>Password</th>
+				<th>Fullname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${users}">
+				<td><span class="text" th:text="${user.id}">Id</span></td>
+				<td><span class="text" th:text="${user.username}">Username</span></td>
+				<td><span class="text" th:text="${user.password}">Password</span></td>
+				<td><span class="text" th:text="${user.fullName}">Fullname</span></td>
+				<td><span class="text" th:text="${user.email}">Email</span></td>
+				<td><a th:href="@{/users/edit/} + ${user.id}">Edit</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<ul>
+		<li class="new"><a href="/Ediary_spring/users/new">Add new
+				user</a></li>
+		<li><form action="/Ediary_spring/users/logout" method="POST">
+				<input class="exit" type="submit" value="Logout" />
+			</form></li>
+	</ul>
+	</div>
+</body>
+</html>

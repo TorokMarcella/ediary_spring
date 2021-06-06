@@ -1,0 +1,50 @@
+body {
+	position: relative;
+    z-index: 1;
+	background: rgba(53,54,58);
+	height: auto;
+	text-align: center;
+	padding: 10px 20px 600px 20px;
+}
+
+h3 {
+	color: #333;
+}
+
+.header {
+	float: center;
+	padding: 8% 0 0;
+	margin: auto;
+}
+
+.from-wrapper {
+	background: #FFFFFF;
+	width: 500px;
+	margin: 0px auto 100px;
+	padding: 20px;
+	text-align: center;
+}
+
+.from-wrapper input {
+	font-family: calibri;
+	background: lightgrey;
+	width: 400px;
+	margin: 0px 0px 10px 0px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 15px;
+	border: 0;
+}
+
+input[type=submit] {
+	font-family: calibri;
+	text-transform: uppercase;
+	background: #dc3545;
+	width: 30%;
+	border: 0;
+	padding: 15px;
+	margin: 0px 0px 10px 50px;
+	color: #FFFFFF;
+	font-size: 20px;
+	cursor: pointer;
+}

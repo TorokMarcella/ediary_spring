@@ -1,0 +1,53 @@
+body {
+	position: relative;
+    z-index: 1;
+	background: rgba(53,54,58);
+	height: auto;
+	text-align: center;
+	padding: 10px 20px 600px 20px;
+}
+
+h3 {
+	color: #333;
+}
+
+.header {
+	width: 400px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+
+.login {
+	background: #fff;
+	width: 390px;
+	margin: 0px auto 100px;
+	padding: 20px;
+	text-align: center;
+}
+
+.login input {
+	font-family: roboto;
+	background: lightgrey;
+	width: 390px;
+	margin: 0px 0px 10px 0px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 15px;
+	border: 0;
+}
+
+input[type=submit] {
+	font-family: roboto;
+	text-transform: uppercase;
+	background: #dc3545;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: grey;
+}
